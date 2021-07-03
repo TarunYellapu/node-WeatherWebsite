@@ -26,7 +26,14 @@ const forecast = (lat, long, callback) => {
           body.main.temp +
           ' degrees, it feels like ' +
           body.main.feels_like +
-          ' degrees'
+          ' degrees' +
+          '. The humidity is ' +
+          body.main.humidity +
+          '. Todays minimun and maximum temperatures are ' +
+          body.main.temp_min +
+          ',' +
+          body.main.temp_max +
+          ' respectively.'
       );
     }
   });
